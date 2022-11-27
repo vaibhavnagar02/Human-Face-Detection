@@ -48,6 +48,9 @@ image pyramid), then the first model (Proposal Network or P-Net) proposes candid
 regions, the second model (Refine Network or R-Net) filters the bounding boxes, and the third
 model (Output Network or O-Net) proposes facial landmarks.
 
+![image](https://user-images.githubusercontent.com/87512533/204122300-e44d7ec1-37d3-41ff-ae79-10fe94f3d1ff.png)
+
+
 
 ## Functions
 
@@ -55,18 +58,29 @@ model (Output Network or O-Net) proposes facial landmarks.
 Here we define a function which will draw the given box on the basis of the Coordinates we get from the MTCNN Detector. We use this Function on the Filename and the
 Number of Faces as we can see in the end of the code. 
 
+![image](https://user-images.githubusercontent.com/87512533/204122311-8b5e2e42-cbb3-4a72-9bfe-9e4896fb4782.png)
+
+
 2.Facial Landmark Detection: In this we draw the given facial landmarks and mark them in the way
 we want to which are given by the MTCNN Constructor. We draw the given Landmarks which are
 Eye’s , Mouth and Nose. We Draw them with given Red Circles as shown in the Output in the
 previous Slide. This can be done for multiple faces in a given image and does take a little time but
 has a good accuracy.
 
+![image](https://user-images.githubusercontent.com/87512533/204122320-2c3394e6-4080-40e1-9686-8b53a679bee7.png)
+
+
 3.Blurring Face: We Use the BLUR Function in Open CV in the code. We Blur the Face and this may
 have different used applications such as Privacy Preservation.
+
+![image](https://user-images.githubusercontent.com/87512533/204122336-a0b08e7e-fe10-448f-924b-5f7ab4364cbb.png)
+
 
 4.Real Time Image Bounding: We use this to open our own Laptop’s Camera using OPEN CV and
 then putting the real time Images through the MTCNN Constructor and giving us back the
 bounding BOX on our given Face infront of the Camera in Real Time.
+
+
 ## Future Plans
 Next steps for this project can be to uniquely identify a person from an image source. Crossreference a detected face from a given database of identified faces to get information about the
 person in an image. Further, we can use the above model to create a face detection system that
